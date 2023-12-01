@@ -1,0 +1,1991 @@
+00:33:00.318 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:33:01.082 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:33:01.354 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:33:01.571 [main] DEBUG com.intuit.karate - response time in milliseconds: 193
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:33:01 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699789462&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=bxOVqyTot36HGUYBKlkeaatFNQgh6oGfJet2Po%2FJ79A%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1699789462&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=bxOVqyTot36HGUYBKlkeaatFNQgh6oGfJet2Po%2FJ79A%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 7119
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e8442c18dd4d42-GRU
+{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+00:33:01.594 [main] ERROR com.intuit.karate - classpath:Reqres/Reqres.feature:10
+And match $.data[0].id == 7
+match failed: EQUALS
+  $ | actual path does not exist (STRING:NUMBER)
+  '#notpresent'
+  7
+
+classpath:Reqres/Reqres.feature:10
+00:33:01.612 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:33:01.616 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/23
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:33:02.098 [main] DEBUG com.intuit.karate - response time in milliseconds: 482
+1 < 404
+1 < Date: Fri, 01 Dec 2023 03:33:02 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401581&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=CGfr8RWwJXeOKKgxCH0zUPuZm%2FHBulTRP3jtADIhvfQ%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401581&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=CGfr8RWwJXeOKKgxCH0zUPuZm%2FHBulTRP3jtADIhvfQ%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: EXPIRED
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e8442d0fdc1189-GIG
+{}
+00:33:02.108 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:33:02.147 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe","job":"Developer"}
+
+00:33:02.596 [main] DEBUG com.intuit.karate - response time in milliseconds: 449
+1 < 201
+1 < Date: Fri, 01 Dec 2023 03:33:02 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401582&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=XSwzqJNP0j6ibuc%2FiLiU1VvohK%2FE3Jf%2F0ssLYbkGiDw%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401582&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=XSwzqJNP0j6ibuc%2FiLiU1VvohK%2FE3Jf%2F0ssLYbkGiDw%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"57-pXoFXRML+8QAtmor7bwBuQQyyCc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e844302b40a517-GRU
+{"createdAt":"2023-12-01T03:33:02.411Z","name":"John Doe","id":"536","job":"Developer"}
+00:33:02.614 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:33:02.616 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 19
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"job":"Developer"}
+
+00:33:03.058 [main] DEBUG com.intuit.karate - response time in milliseconds: 442
+1 < 201
+1 < Date: Fri, 01 Dec 2023 03:33:02 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 68
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401582&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=XSwzqJNP0j6ibuc%2FiLiU1VvohK%2FE3Jf%2F0ssLYbkGiDw%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401582&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=XSwzqJNP0j6ibuc%2FiLiU1VvohK%2FE3Jf%2F0ssLYbkGiDw%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"44-yYJinxvnWRBPTmFdlBLfd8+Br64"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e844330867a635-GRU
+{"createdAt":"2023-12-01T03:33:02.887Z","id":"62","job":"Developer"}
+00:33:03.059 [main] ERROR com.intuit.karate - classpath:Reqres/Reqres.feature:28
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 442, url: https://reqres.in/api/users, response: 
+{"job":"Developer","id":"62","createdAt":"2023-12-01T03:33:02.887Z"}
+classpath:Reqres/Reqres.feature:28
+00:33:03.067 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:33:03.069 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jane Doe","job":"Leader"}
+
+00:33:03.531 [main] DEBUG com.intuit.karate - response time in milliseconds: 462
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:33:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401583&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=qnfX%2BrEMt6ZXX5QGdYDyRVRPqgU0AkSz1C8qJs%2FsjYk%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401583&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=qnfX%2BrEMt6ZXX5QGdYDyRVRPqgU0AkSz1C8qJs%2FsjYk%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"49-YSvIsImvcM3QLx/4EdP9gg9MzjA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e844360cf272ce-GIG
+{"name":"Jane Doe","job":"Leader","updatedAt":"2023-12-01T03:33:03.354Z"}
+00:33:03.537 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:33:03.539 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:33:03.971 [main] DEBUG com.intuit.karate - response time in milliseconds: 431
+1 < 204
+1 < Date: Fri, 01 Dec 2023 03:33:03 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401583&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=qnfX%2BrEMt6ZXX5QGdYDyRVRPqgU0AkSz1C8qJs%2FsjYk%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401583&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=qnfX%2BrEMt6ZXX5QGdYDyRVRPqgU0AkSz1C8qJs%2FsjYk%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e84438da58a553-GRU
+
+00:35:29.784 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:35:30.545 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:35:30.822 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:35:31.020 [main] DEBUG com.intuit.karate - response time in milliseconds: 173
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:35:30 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701366337&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2BsEJJu2%2Bt10uB0PrYT8QO2IC2B6DN5u65%2FHgfGrS0Uo%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701366337&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2BsEJJu2%2Bt10uB0PrYT8QO2IC2B6DN5u65%2FHgfGrS0Uo%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 6117
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e847d21e8e00c2-GRU
+{"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https:\/\/reqres.in\/img\/faces\/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https:\/\/reqres.in\/img\/faces\/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https:\/\/reqres.in\/img\/faces\/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https:\/\/reqres.in\/img\/faces\/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https:\/\/reqres.in\/img\/faces\/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https:\/\/reqres.in\/img\/faces\/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+00:35:31.040 [main] ERROR com.intuit.karate - classpath:Reqres/Reqres.feature:10
+And match $.data[*] contains { id: #number }
+match failed: CONTAINS
+  $ | actual does not contain expected | actual array does not contain expected item - {"id":"#number"} (LIST:MAP)
+  [{"last_name":"Lawson","id":7,"avatar":"https://reqres.in/img/faces/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https://reqres.in/img/faces/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https://reqres.in/img/faces/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https://reqres.in/img/faces/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https://reqres.in/img/faces/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https://reqres.in/img/faces/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}]
+  {"id":"#number"}
+
+    $[5] | not equal | actual has 4 more key(s) than expected - {"last_name":"Howell","avatar":"https:\/\/reqres.in\/img\/faces\/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"} (MAP:MAP)
+    {"last_name":"Howell","id":12,"avatar":"https://reqres.in/img/faces/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}
+    {"id":"#number"}
+
+    $[4] | not equal | actual has 4 more key(s) than expected - {"last_name":"Edwards","avatar":"https:\/\/reqres.in\/img\/faces\/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"} (MAP:MAP)
+    {"last_name":"Edwards","id":11,"avatar":"https://reqres.in/img/faces/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"}
+    {"id":"#number"}
+
+    $[3] | not equal | actual has 4 more key(s) than expected - {"last_name":"Fields","avatar":"https:\/\/reqres.in\/img\/faces\/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"} (MAP:MAP)
+    {"last_name":"Fields","id":10,"avatar":"https://reqres.in/img/faces/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"}
+    {"id":"#number"}
+
+    $[2] | not equal | actual has 4 more key(s) than expected - {"last_name":"Funke","avatar":"https:\/\/reqres.in\/img\/faces\/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"} (MAP:MAP)
+    {"last_name":"Funke","id":9,"avatar":"https://reqres.in/img/faces/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"}
+    {"id":"#number"}
+
+    $[1] | not equal | actual has 4 more key(s) than expected - {"last_name":"Ferguson","avatar":"https:\/\/reqres.in\/img\/faces\/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"} (MAP:MAP)
+    {"last_name":"Ferguson","id":8,"avatar":"https://reqres.in/img/faces/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"}
+    {"id":"#number"}
+
+    $[0] | not equal | actual has 4 more key(s) than expected - {"last_name":"Lawson","avatar":"https:\/\/reqres.in\/img\/faces\/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"} (MAP:MAP)
+    {"last_name":"Lawson","id":7,"avatar":"https://reqres.in/img/faces/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"}
+    {"id":"#number"}
+
+
+classpath:Reqres/Reqres.feature:10
+00:35:31.061 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:35:31.066 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/23
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:35:31.516 [main] DEBUG com.intuit.karate - response time in milliseconds: 450
+1 < 404
+1 < Date: Fri, 01 Dec 2023 03:35:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401731&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=cJYeC4i3hjf9AElYhu%2Bx%2ByrN3T%2Fo3fdp%2FuQC29RpATo%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401731&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=cJYeC4i3hjf9AElYhu%2Bx%2ByrN3T%2Fo3fdp%2FuQC29RpATo%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: EXPIRED
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e847d2fa624d30-GRU
+{}
+00:35:31.526 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:35:31.558 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe","job":"Developer"}
+
+00:35:32.009 [main] DEBUG com.intuit.karate - response time in milliseconds: 450
+1 < 201
+1 < Date: Fri, 01 Dec 2023 03:35:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401731&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=cJYeC4i3hjf9AElYhu%2Bx%2ByrN3T%2Fo3fdp%2FuQC29RpATo%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401731&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=cJYeC4i3hjf9AElYhu%2Bx%2ByrN3T%2Fo3fdp%2FuQC29RpATo%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"57-ai5P4Xyq1TOAIKTwbjsK1C9mLjE"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e847d5ee911ac9-GRU
+{"createdAt":"2023-12-01T03:35:31.828Z","name":"John Doe","id":"394","job":"Developer"}
+00:35:32.017 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:35:32.019 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/23
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe","job":"Developer"}
+
+00:35:32.465 [main] DEBUG com.intuit.karate - response time in milliseconds: 446
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:35:32 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401732&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=SJ1GXdTvV%2BGyXCoOWnbRPIUqcRU0zsd%2FSlS%2FPDSvRI8%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401732&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=SJ1GXdTvV%2BGyXCoOWnbRPIUqcRU0zsd%2FSlS%2FPDSvRI8%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"4c-zBtNmzIGvZ0OOqtkyIq4agz59zQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e847d8d8380185-GRU
+{"name":"John Doe","job":"Developer","updatedAt":"2023-12-01T03:35:32.286Z"}
+00:35:32.466 [main] ERROR com.intuit.karate - classpath:Reqres/Reqres.feature:29
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 446, url: https://reqres.in/api/users/23, response: 
+{"name":"John Doe","job":"Developer","updatedAt":"2023-12-01T03:35:32.286Z"}
+classpath:Reqres/Reqres.feature:29
+00:35:32.472 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:35:32.476 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jane Doe","job":"Leader"}
+
+00:35:32.907 [main] DEBUG com.intuit.karate - response time in milliseconds: 431
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:35:32 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401732&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=SJ1GXdTvV%2BGyXCoOWnbRPIUqcRU0zsd%2FSlS%2FPDSvRI8%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401732&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=SJ1GXdTvV%2BGyXCoOWnbRPIUqcRU0zsd%2FSlS%2FPDSvRI8%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"49-WEcQQnElzbG/q1vwlWk/sC5qq1U"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e847dbaecc1af3-GRU
+{"name":"Jane Doe","job":"Leader","updatedAt":"2023-12-01T03:35:32.730Z"}
+00:35:32.915 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:35:32.917 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:35:33.340 [main] DEBUG com.intuit.karate - response time in milliseconds: 422
+1 < 204
+1 < Date: Fri, 01 Dec 2023 03:35:33 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401733&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=GW5BmzTk7KvEgY%2FgmyfzI4qWheSQKxrAXF6r%2B9DllKk%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401733&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=GW5BmzTk7KvEgY%2FgmyfzI4qWheSQKxrAXF6r%2B9DllKk%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e847de69211b11-GRU
+
+00:37:39.929 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:37:40.712 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:37:40.981 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:37:41.576 [main] DEBUG com.intuit.karate - response time in milliseconds: 572
+1 < 404
+1 < Date: Fri, 01 Dec 2023 03:37:41 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401861&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=d45wCy7Xt5wSh%2BAKyPjfCvk7w2G0pww3bBf0L6XvHhM%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401861&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=d45wCy7Xt5wSh%2BAKyPjfCvk7w2G0pww3bBf0L6XvHhM%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: MISS
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e84aff9ff051fe-GRU
+{}
+00:37:41.579 [main] ERROR com.intuit.karate - classpath:Reqres/Reqres.feature:9
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 572, url: https://reqres.in/api/api/users?page=2, response: 
+{}
+classpath:Reqres/Reqres.feature:9
+00:37:41.594 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:37:41.597 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/23
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:37:42.033 [main] DEBUG com.intuit.karate - response time in milliseconds: 436
+1 < 404
+1 < Date: Fri, 01 Dec 2023 03:37:41 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401861&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=d45wCy7Xt5wSh%2BAKyPjfCvk7w2G0pww3bBf0L6XvHhM%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401861&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=d45wCy7Xt5wSh%2BAKyPjfCvk7w2G0pww3bBf0L6XvHhM%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: EXPIRED
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e84b02acb0a523-GRU
+{}
+00:37:42.042 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:37:42.092 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe","job":"Developer"}
+
+00:37:42.549 [main] DEBUG com.intuit.karate - response time in milliseconds: 457
+1 < 201
+1 < Date: Fri, 01 Dec 2023 03:37:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401862&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=XMI9cS%2Bw%2BWachVCsXqKZiwtPAg%2Fvqkq5MpQsRfxl6XE%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401862&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=XMI9cS%2Bw%2BWachVCsXqKZiwtPAg%2Fvqkq5MpQsRfxl6XE%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"57-vCreSuQX0zWLlv4t5D1v/0Q2xNw"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e84b05b99b0319-GRU
+{"createdAt":"2023-12-01T03:37:42.368Z","name":"John Doe","id":"740","job":"Developer"}
+00:37:42.565 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:37:42.578 [main] DEBUG com.intuit.karate - request:
+1 > PATCH https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 19
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe"}
+
+00:37:43.022 [main] DEBUG com.intuit.karate - response time in milliseconds: 443
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:37:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401862&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=XMI9cS%2Bw%2BWachVCsXqKZiwtPAg%2Fvqkq5MpQsRfxl6XE%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401862&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=XMI9cS%2Bw%2BWachVCsXqKZiwtPAg%2Fvqkq5MpQsRfxl6XE%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"3a-ACblZ82Zwo1xo/qq2LXwXzf4T80"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e84b08bef0a626-GRU
+{"name":"John Doe","updatedAt":"2023-12-01T03:37:42.841Z"}
+00:37:43.023 [main] ERROR com.intuit.karate - classpath:Reqres/Reqres.feature:29
+Then status 405
+status code was: 200, expected: 405, response time in milliseconds: 443, url: https://reqres.in/api/users/2, response: 
+{"name":"John Doe","updatedAt":"2023-12-01T03:37:42.841Z"}
+classpath:Reqres/Reqres.feature:29
+00:37:43.033 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:37:43.038 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jane Doe","job":"Leader"}
+
+00:37:43.488 [main] DEBUG com.intuit.karate - response time in milliseconds: 450
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:37:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401863&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=veR2IiDekikFmet2YxCBsml6ojga4wktfI5duVBWdcs%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401863&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=veR2IiDekikFmet2YxCBsml6ojga4wktfI5duVBWdcs%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"49-jBjTsAfcMkEsnYjXokb4XOvj2KE"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e84b0ba84901d6-GRU
+{"name":"Jane Doe","job":"Leader","updatedAt":"2023-12-01T03:37:43.304Z"}
+00:37:43.496 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:37:43.501 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:37:43.972 [main] DEBUG com.intuit.karate - response time in milliseconds: 471
+1 < 204
+1 < Date: Fri, 01 Dec 2023 03:37:43 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401863&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=veR2IiDekikFmet2YxCBsml6ojga4wktfI5duVBWdcs%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401863&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=veR2IiDekikFmet2YxCBsml6ojga4wktfI5duVBWdcs%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e84b0e8dae02ef-GRU
+
+00:38:27.599 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:38:28.335 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:38:28.603 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:38:28.833 [main] DEBUG com.intuit.karate - response time in milliseconds: 204
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:38:28 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701203119&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=cqTgZEZ1NuceohmBJpl9fnwv6BTWjJKLAIWTi4yArN0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701203119&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=cqTgZEZ1NuceohmBJpl9fnwv6BTWjJKLAIWTi4yArN0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 7015
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e84c297f5864f1-GIG
+{"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https:\/\/reqres.in\/img\/faces\/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https:\/\/reqres.in\/img\/faces\/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https:\/\/reqres.in\/img\/faces\/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https:\/\/reqres.in\/img\/faces\/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https:\/\/reqres.in\/img\/faces\/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https:\/\/reqres.in\/img\/faces\/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+00:38:28.853 [main] ERROR com.intuit.karate - classpath:Reqres/Reqres.feature:10
+And match $.data[*] contains { id: #number }
+match failed: CONTAINS
+  $ | actual does not contain expected | actual array does not contain expected item - {"id":"#number"} (LIST:MAP)
+  [{"last_name":"Lawson","id":7,"avatar":"https://reqres.in/img/faces/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https://reqres.in/img/faces/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https://reqres.in/img/faces/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https://reqres.in/img/faces/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https://reqres.in/img/faces/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https://reqres.in/img/faces/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}]
+  {"id":"#number"}
+
+    $[5] | not equal | actual has 4 more key(s) than expected - {"last_name":"Howell","avatar":"https:\/\/reqres.in\/img\/faces\/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"} (MAP:MAP)
+    {"last_name":"Howell","id":12,"avatar":"https://reqres.in/img/faces/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}
+    {"id":"#number"}
+
+    $[4] | not equal | actual has 4 more key(s) than expected - {"last_name":"Edwards","avatar":"https:\/\/reqres.in\/img\/faces\/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"} (MAP:MAP)
+    {"last_name":"Edwards","id":11,"avatar":"https://reqres.in/img/faces/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"}
+    {"id":"#number"}
+
+    $[3] | not equal | actual has 4 more key(s) than expected - {"last_name":"Fields","avatar":"https:\/\/reqres.in\/img\/faces\/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"} (MAP:MAP)
+    {"last_name":"Fields","id":10,"avatar":"https://reqres.in/img/faces/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"}
+    {"id":"#number"}
+
+    $[2] | not equal | actual has 4 more key(s) than expected - {"last_name":"Funke","avatar":"https:\/\/reqres.in\/img\/faces\/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"} (MAP:MAP)
+    {"last_name":"Funke","id":9,"avatar":"https://reqres.in/img/faces/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"}
+    {"id":"#number"}
+
+    $[1] | not equal | actual has 4 more key(s) than expected - {"last_name":"Ferguson","avatar":"https:\/\/reqres.in\/img\/faces\/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"} (MAP:MAP)
+    {"last_name":"Ferguson","id":8,"avatar":"https://reqres.in/img/faces/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"}
+    {"id":"#number"}
+
+    $[0] | not equal | actual has 4 more key(s) than expected - {"last_name":"Lawson","avatar":"https:\/\/reqres.in\/img\/faces\/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"} (MAP:MAP)
+    {"last_name":"Lawson","id":7,"avatar":"https://reqres.in/img/faces/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"}
+    {"id":"#number"}
+
+
+classpath:Reqres/Reqres.feature:10
+00:38:28.873 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:38:28.876 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/23
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:38:28.926 [main] DEBUG com.intuit.karate - response time in milliseconds: 48
+1 < 404
+1 < Date: Fri, 01 Dec 2023 03:38:28 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401731&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=cJYeC4i3hjf9AElYhu%2Bx%2ByrN3T%2Fo3fdp%2FuQC29RpATo%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401731&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=cJYeC4i3hjf9AElYhu%2Bx%2ByrN3T%2Fo3fdp%2FuQC29RpATo%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 177
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e84c2a2de56b08-GRU
+{}
+00:38:28.935 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:38:28.969 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe","job":"Developer"}
+
+00:38:29.396 [main] DEBUG com.intuit.karate - response time in milliseconds: 427
+1 < 201
+1 < Date: Fri, 01 Dec 2023 03:38:29 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 86
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401909&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=8%2B1AEnSoW4zlg3A3EOXT%2FrzJtqloxy4hNdAfrMxbRO8%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401909&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=8%2B1AEnSoW4zlg3A3EOXT%2FrzJtqloxy4hNdAfrMxbRO8%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"56-49EcTveAf3bEf1mim2s/V8XVohU"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e84c2aac521b20-GRU
+{"createdAt":"2023-12-01T03:38:29.216Z","name":"John Doe","id":"29","job":"Developer"}
+00:38:29.405 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:38:29.409 [main] DEBUG com.intuit.karate - request:
+1 > PATCH https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 19
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe"}
+
+00:38:29.848 [main] DEBUG com.intuit.karate - response time in milliseconds: 439
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:38:29 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401909&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=8%2B1AEnSoW4zlg3A3EOXT%2FrzJtqloxy4hNdAfrMxbRO8%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401909&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=8%2B1AEnSoW4zlg3A3EOXT%2FrzJtqloxy4hNdAfrMxbRO8%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"3a-916J1hW6cPCNHxsPZXEZPo4Nobk"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e84c2d6f7f1d2a-GRU
+{"name":"John Doe","updatedAt":"2023-12-01T03:38:29.666Z"}
+00:38:29.848 [main] ERROR com.intuit.karate - classpath:Reqres/Reqres.feature:29
+Then status 405
+status code was: 200, expected: 405, response time in milliseconds: 439, url: https://reqres.in/api/users/2, response: 
+{"name":"John Doe","updatedAt":"2023-12-01T03:38:29.666Z"}
+classpath:Reqres/Reqres.feature:29
+00:38:29.854 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:38:29.856 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jane Doe","job":"Leader"}
+
+00:38:30.309 [main] DEBUG com.intuit.karate - response time in milliseconds: 453
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:38:30 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401910&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=BvdHhyfRoWwEmf4kOx3g4e5j7I13Ztie4pKX2SaPjtY%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401910&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=BvdHhyfRoWwEmf4kOx3g4e5j7I13Ztie4pKX2SaPjtY%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"49-lfGCig8eGS9178IXGSg9fG75YRs"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e84c304ed21b25-GRU
+{"name":"Jane Doe","job":"Leader","updatedAt":"2023-12-01T03:38:30.126Z"}
+00:38:30.316 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:38:30.318 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:38:30.778 [main] DEBUG com.intuit.karate - response time in milliseconds: 459
+1 < 204
+1 < Date: Fri, 01 Dec 2023 03:38:30 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401910&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=BvdHhyfRoWwEmf4kOx3g4e5j7I13Ztie4pKX2SaPjtY%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401910&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=BvdHhyfRoWwEmf4kOx3g4e5j7I13Ztie4pKX2SaPjtY%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e84c334cac644b-GIG
+
+00:39:27.907 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:39:28.694 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:39:28.978 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:39:29.211 [main] DEBUG com.intuit.karate - response time in milliseconds: 206
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:39:29 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701245313&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=2BhHe7EfRezpqLxzYwGnTfR5chASH8lai2DUt7VKqTw%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701245313&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=2BhHe7EfRezpqLxzYwGnTfR5chASH8lai2DUt7VKqTw%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 3296
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e84da2990ca4e1-GRU
+{"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https:\/\/reqres.in\/img\/faces\/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https:\/\/reqres.in\/img\/faces\/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https:\/\/reqres.in\/img\/faces\/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https:\/\/reqres.in\/img\/faces\/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https:\/\/reqres.in\/img\/faces\/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https:\/\/reqres.in\/img\/faces\/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+00:39:29.233 [main] ERROR com.intuit.karate - classpath:Reqres/Reqres.feature:10
+And match each $ contains { id: #number }
+match failed: EACH_CONTAINS
+  $ | actual is not an array or list (MAP:MAP)
+  {"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https://reqres.in/img/faces/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https://reqres.in/img/faces/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https://reqres.in/img/faces/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https://reqres.in/img/faces/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https://reqres.in/img/faces/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https://reqres.in/img/faces/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https://reqres.in/#support-heading"}}
+  {"id":"#number"}
+
+classpath:Reqres/Reqres.feature:10
+00:39:29.275 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:39:29.279 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/23
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:39:29.754 [main] DEBUG com.intuit.karate - response time in milliseconds: 475
+1 < 404
+1 < Date: Fri, 01 Dec 2023 03:39:29 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401969&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=Ssc37DBC2QY5QjKi9i5PcWS2jY1ndrpXTTlQbPFiHrM%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401969&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=Ssc37DBC2QY5QjKi9i5PcWS2jY1ndrpXTTlQbPFiHrM%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: EXPIRED
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e84da3ed946448-GIG
+{}
+00:39:29.762 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:39:29.799 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe","job":"Developer"}
+
+00:39:30.261 [main] DEBUG com.intuit.karate - response time in milliseconds: 462
+1 < 201
+1 < Date: Fri, 01 Dec 2023 03:39:30 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401970&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=fYj0oOI2pXAzmKck1tbDvsXLBYFi4fPsALtPTyUlzjM%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401970&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=fYj0oOI2pXAzmKck1tbDvsXLBYFi4fPsALtPTyUlzjM%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"57-WZrIfctjTI6LTmaiIvRtticjqTU"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e84da70c9225fd-GIG
+{"createdAt":"2023-12-01T03:39:30.071Z","name":"John Doe","id":"698","job":"Developer"}
+00:39:30.269 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:39:30.272 [main] DEBUG com.intuit.karate - request:
+1 > PATCH https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 19
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe"}
+
+00:39:30.728 [main] DEBUG com.intuit.karate - response time in milliseconds: 456
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:39:30 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401970&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=fYj0oOI2pXAzmKck1tbDvsXLBYFi4fPsALtPTyUlzjM%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401970&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=fYj0oOI2pXAzmKck1tbDvsXLBYFi4fPsALtPTyUlzjM%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"3a-S4uyB+sYpOVd3OS/U02XMdvK7R0"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e84da9e8496b12-GRU
+{"name":"John Doe","updatedAt":"2023-12-01T03:39:30.545Z"}
+00:39:30.730 [main] ERROR com.intuit.karate - classpath:Reqres/Reqres.feature:29
+Then status 405
+status code was: 200, expected: 405, response time in milliseconds: 456, url: https://reqres.in/api/users/2, response: 
+{"name":"John Doe","updatedAt":"2023-12-01T03:39:30.545Z"}
+classpath:Reqres/Reqres.feature:29
+00:39:30.735 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:39:30.738 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jane Doe","job":"Leader"}
+
+00:39:31.171 [main] DEBUG com.intuit.karate - response time in milliseconds: 433
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:39:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401970&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=fYj0oOI2pXAzmKck1tbDvsXLBYFi4fPsALtPTyUlzjM%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401970&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=fYj0oOI2pXAzmKck1tbDvsXLBYFi4fPsALtPTyUlzjM%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"49-Dp4E+qfJX8f/Gpe+cRHaDmr4pVA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e84dacb9f1068d-GRU
+{"name":"Jane Doe","job":"Leader","updatedAt":"2023-12-01T03:39:30.985Z"}
+00:39:31.178 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:39:31.180 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:39:31.620 [main] DEBUG com.intuit.karate - response time in milliseconds: 439
+1 < 204
+1 < Date: Fri, 01 Dec 2023 03:39:31 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701401971&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=QSF5N3rLIH2dq3FdfSJms4ubjac%2Fos4tB%2B%2Bc2NS0vQM%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701401971&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=QSF5N3rLIH2dq3FdfSJms4ubjac%2Fos4tB%2B%2Bc2NS0vQM%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e84daf7fffa561-GRU
+
+00:40:15.059 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:40:15.809 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:40:16.076 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:40:16.273 [main] DEBUG com.intuit.karate - response time in milliseconds: 171
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:40:16 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701366337&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2BsEJJu2%2Bt10uB0PrYT8QO2IC2B6DN5u65%2FHgfGrS0Uo%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701366337&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2BsEJJu2%2Bt10uB0PrYT8QO2IC2B6DN5u65%2FHgfGrS0Uo%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 6403
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e84ec8d8bd4b3b-GRU
+{"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https:\/\/reqres.in\/img\/faces\/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https:\/\/reqres.in\/img\/faces\/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https:\/\/reqres.in\/img\/faces\/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https:\/\/reqres.in\/img\/faces\/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https:\/\/reqres.in\/img\/faces\/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https:\/\/reqres.in\/img\/faces\/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+00:40:16.293 [main] ERROR com.intuit.karate - classpath:Reqres/Reqres.feature:10
+And match each $ contains { id: '#number' }
+match failed: EACH_CONTAINS
+  $ | actual is not an array or list (MAP:MAP)
+  {"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https://reqres.in/img/faces/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https://reqres.in/img/faces/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https://reqres.in/img/faces/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https://reqres.in/img/faces/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https://reqres.in/img/faces/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https://reqres.in/img/faces/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https://reqres.in/#support-heading"}}
+  {"id":"#number"}
+
+classpath:Reqres/Reqres.feature:10
+00:40:16.310 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:40:16.312 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/23
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:40:16.791 [main] DEBUG com.intuit.karate - response time in milliseconds: 477
+1 < 404
+1 < Date: Fri, 01 Dec 2023 03:40:16 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402016&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=6SYdeQ4gErWqN2qLOy%2BCDdXHTpylsxjwyWpjPoojYHo%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402016&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=6SYdeQ4gErWqN2qLOy%2BCDdXHTpylsxjwyWpjPoojYHo%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: EXPIRED
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e84ec99bc00129-GRU
+{}
+00:40:16.799 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:40:16.833 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe","job":"Developer"}
+
+00:40:17.277 [main] DEBUG com.intuit.karate - response time in milliseconds: 444
+1 < 201
+1 < Date: Fri, 01 Dec 2023 03:40:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402017&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=SY%2BiJnHfgO040oFPCb80w8EpZelfU%2FzFqyWTeFGFhRk%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402017&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=SY%2BiJnHfgO040oFPCb80w8EpZelfU%2FzFqyWTeFGFhRk%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"57-8Qd0qDt1JD6zib5ObGZTsagAsmg"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e84eccdd2da50b-GRU
+{"createdAt":"2023-12-01T03:40:17.092Z","name":"John Doe","id":"728","job":"Developer"}
+00:40:17.286 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:40:17.288 [main] DEBUG com.intuit.karate - request:
+1 > PATCH https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 19
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe"}
+
+00:40:17.755 [main] DEBUG com.intuit.karate - response time in milliseconds: 467
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:40:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402017&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=SY%2BiJnHfgO040oFPCb80w8EpZelfU%2FzFqyWTeFGFhRk%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402017&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=SY%2BiJnHfgO040oFPCb80w8EpZelfU%2FzFqyWTeFGFhRk%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"3a-dz9Gs0ved2AF9/JA6r+s2Nuf7TQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e84ecfcccb0307-GRU
+{"name":"John Doe","updatedAt":"2023-12-01T03:40:17.567Z"}
+00:40:17.757 [main] ERROR com.intuit.karate - classpath:Reqres/Reqres.feature:28
+Then status 405
+status code was: 200, expected: 405, response time in milliseconds: 467, url: https://reqres.in/api/users/2, response: 
+{"name":"John Doe","updatedAt":"2023-12-01T03:40:17.567Z"}
+classpath:Reqres/Reqres.feature:28
+00:40:17.762 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:40:17.766 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jane Doe","job":"Leader"}
+
+00:40:18.190 [main] DEBUG com.intuit.karate - response time in milliseconds: 423
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:40:18 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402018&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2FlNPnAA4zh4uep4bYn7amqLqYYjGpnAqXY1inFXFwug%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402018&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2FlNPnAA4zh4uep4bYn7amqLqYYjGpnAqXY1inFXFwug%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"49-BlKQuFpTsRZRYq4usHfkHiUqkh8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e84ed2a94f51b9-GRU
+{"name":"Jane Doe","job":"Leader","updatedAt":"2023-12-01T03:40:18.005Z"}
+00:40:18.197 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:40:18.199 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:40:18.641 [main] DEBUG com.intuit.karate - response time in milliseconds: 442
+1 < 204
+1 < Date: Fri, 01 Dec 2023 03:40:18 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402018&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2FlNPnAA4zh4uep4bYn7amqLqYYjGpnAqXY1inFXFwug%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402018&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2FlNPnAA4zh4uep4bYn7amqLqYYjGpnAqXY1inFXFwug%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e84ed55a1e1af2-GRU
+
+00:41:21.542 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:41:22.331 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:41:22.605 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:41:22.829 [main] DEBUG com.intuit.karate - response time in milliseconds: 194
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:41:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701323359&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=II8280rldLf5B7d%2BJNbC7%2BIrAU5pQaUb8HboAOQOcrM%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701323359&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=II8280rldLf5B7d%2BJNbC7%2BIrAU5pQaUb8HboAOQOcrM%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 603
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e85068dbc81b25-GRU
+{"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https:\/\/reqres.in\/img\/faces\/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https:\/\/reqres.in\/img\/faces\/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https:\/\/reqres.in\/img\/faces\/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https:\/\/reqres.in\/img\/faces\/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https:\/\/reqres.in\/img\/faces\/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https:\/\/reqres.in\/img\/faces\/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+00:41:22.865 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:41:22.868 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/23
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:41:22.914 [main] DEBUG com.intuit.karate - response time in milliseconds: 46
+1 < 404
+1 < Date: Fri, 01 Dec 2023 03:41:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402016&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=6SYdeQ4gErWqN2qLOy%2BCDdXHTpylsxjwyWpjPoojYHo%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402016&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=6SYdeQ4gErWqN2qLOy%2BCDdXHTpylsxjwyWpjPoojYHo%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 66
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e850699c2f520a-GRU
+{}
+00:41:22.922 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:41:22.960 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe","job":"Developer"}
+
+00:41:23.387 [main] DEBUG com.intuit.karate - response time in milliseconds: 427
+1 < 201
+1 < Date: Fri, 01 Dec 2023 03:41:23 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402083&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=S8GWCKCyZPeQO9ADWvNRnav3jFY3xvgMEWk69fGKk%2BU%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402083&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=S8GWCKCyZPeQO9ADWvNRnav3jFY3xvgMEWk69fGKk%2BU%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"57-y/apCzRf18/dPh1ldlODjjj8pLM"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e8506a1a0f6b02-GRU
+{"createdAt":"2023-12-01T03:41:23.200Z","name":"John Doe","id":"384","job":"Developer"}
+00:41:23.396 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:41:23.400 [main] DEBUG com.intuit.karate - request:
+1 > PATCH https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 19
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe"}
+
+00:41:23.847 [main] DEBUG com.intuit.karate - response time in milliseconds: 447
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:41:23 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402083&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=S8GWCKCyZPeQO9ADWvNRnav3jFY3xvgMEWk69fGKk%2BU%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402083&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=S8GWCKCyZPeQO9ADWvNRnav3jFY3xvgMEWk69fGKk%2BU%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"3a-gA/BbO7RLdlJ7kE2zfUfqz9O+Tk"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e8506cdc3d1d1b-GRU
+{"name":"John Doe","updatedAt":"2023-12-01T03:41:23.660Z"}
+00:41:23.848 [main] ERROR com.intuit.karate - classpath:Reqres/Reqres.feature:28
+Then status 405
+status code was: 200, expected: 405, response time in milliseconds: 447, url: https://reqres.in/api/users/2, response: 
+{"name":"John Doe","updatedAt":"2023-12-01T03:41:23.660Z"}
+classpath:Reqres/Reqres.feature:28
+00:41:23.860 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:41:23.872 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jane Doe","job":"Leader"}
+
+00:41:24.323 [main] DEBUG com.intuit.karate - response time in milliseconds: 451
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:41:24 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402084&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=sh4NdlRZw2pYP9BVNq3KL%2FCGjKCd438vuOck4p1l3is%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402084&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=sh4NdlRZw2pYP9BVNq3KL%2FCGjKCd438vuOck4p1l3is%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"49-ryArE6NRCLG5e5I1+mLyDP7Nby8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e8506fccfb01ad-GRU
+{"name":"Jane Doe","job":"Leader","updatedAt":"2023-12-01T03:41:24.132Z"}
+00:41:24.331 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:41:24.333 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:41:24.783 [main] DEBUG com.intuit.karate - response time in milliseconds: 449
+1 < 204
+1 < Date: Fri, 01 Dec 2023 03:41:24 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402084&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=sh4NdlRZw2pYP9BVNq3KL%2FCGjKCd438vuOck4p1l3is%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402084&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=sh4NdlRZw2pYP9BVNq3KL%2FCGjKCd438vuOck4p1l3is%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e85072a90da532-GRU
+
+00:42:33.818 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:42:34.536 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:42:34.812 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:42:35.008 [main] DEBUG com.intuit.karate - response time in milliseconds: 173
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:42:34 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701366337&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2BsEJJu2%2Bt10uB0PrYT8QO2IC2B6DN5u65%2FHgfGrS0Uo%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701366337&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2BsEJJu2%2Bt10uB0PrYT8QO2IC2B6DN5u65%2FHgfGrS0Uo%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 6541
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e8522bfb2c4cfd-GRU
+{"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https:\/\/reqres.in\/img\/faces\/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https:\/\/reqres.in\/img\/faces\/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https:\/\/reqres.in\/img\/faces\/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https:\/\/reqres.in\/img\/faces\/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https:\/\/reqres.in\/img\/faces\/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https:\/\/reqres.in\/img\/faces\/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+00:42:35.045 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:42:35.048 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/23
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:42:35.527 [main] DEBUG com.intuit.karate - response time in milliseconds: 479
+1 < 404
+1 < Date: Fri, 01 Dec 2023 03:42:35 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402155&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=RYDWipDLvY5vPTNBHrCOTaa2KVQ35WNaZGfZIrwc71g%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402155&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=RYDWipDLvY5vPTNBHrCOTaa2KVQ35WNaZGfZIrwc71g%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: EXPIRED
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e8522cdc041d60-GIG
+{}
+00:42:35.535 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:42:35.564 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe","job":"Developer"}
+
+00:42:36.024 [main] DEBUG com.intuit.karate - response time in milliseconds: 458
+1 < 201
+1 < Date: Fri, 01 Dec 2023 03:42:35 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402155&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=RYDWipDLvY5vPTNBHrCOTaa2KVQ35WNaZGfZIrwc71g%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402155&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=RYDWipDLvY5vPTNBHrCOTaa2KVQ35WNaZGfZIrwc71g%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"57-egBst/osgKtaycBesGpKs9wqXRY"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e852300a736449-GIG
+{"createdAt":"2023-12-01T03:42:35.832Z","name":"John Doe","id":"473","job":"Developer"}
+00:42:36.031 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:42:36.034 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 19
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jane Doe"}
+
+00:42:36.491 [main] DEBUG com.intuit.karate - response time in milliseconds: 457
+1 < 201
+1 < Date: Fri, 01 Dec 2023 03:42:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 69
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402156&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=NjMe4eBayUztGEhf75dD77C2QGiUG3fKN2fMnmCJLT0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402156&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=NjMe4eBayUztGEhf75dD77C2QGiUG3fKN2fMnmCJLT0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"45-0T+TCNMvZ7thEd5mYxUA6YP79ac"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e85232fcfd6454-GIG
+{"createdAt":"2023-12-01T03:42:36.299Z","name":"Jane Doe","id":"659"}
+00:42:36.493 [main] ERROR com.intuit.karate - classpath:Reqres/Reqres.feature:28
+Then status 405
+status code was: 201, expected: 405, response time in milliseconds: 457, url: https://reqres.in/api/users/2, response: 
+{"name":"Jane Doe","id":"659","createdAt":"2023-12-01T03:42:36.299Z"}
+classpath:Reqres/Reqres.feature:28
+00:42:36.506 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:42:36.508 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jane Doe","job":"Leader"}
+
+00:42:36.959 [main] DEBUG com.intuit.karate - response time in milliseconds: 449
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:42:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402156&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=NjMe4eBayUztGEhf75dD77C2QGiUG3fKN2fMnmCJLT0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402156&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=NjMe4eBayUztGEhf75dD77C2QGiUG3fKN2fMnmCJLT0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"49-Vx+ewPqx5M5XeD+1G4XgXOqwTbc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e85235c80d01d6-GRU
+{"name":"Jane Doe","job":"Leader","updatedAt":"2023-12-01T03:42:36.767Z"}
+00:42:36.967 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:42:36.970 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:42:37.411 [main] DEBUG com.intuit.karate - response time in milliseconds: 441
+1 < 204
+1 < Date: Fri, 01 Dec 2023 03:42:37 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402157&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=Geu2sH%2FDCI1bWAPOgvnKheMtxQogxfSRvwf9Vx%2Bjw9I%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402157&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=Geu2sH%2FDCI1bWAPOgvnKheMtxQogxfSRvwf9Vx%2Bjw9I%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e85238a8ea1d2c-GRU
+
+00:43:36.822 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:43:37.555 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:43:37.829 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:43:38.468 [main] DEBUG com.intuit.karate - response time in milliseconds: 614
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:43:38 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701203119&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=cqTgZEZ1NuceohmBJpl9fnwv6BTWjJKLAIWTi4yArN0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701203119&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=cqTgZEZ1NuceohmBJpl9fnwv6BTWjJKLAIWTi4yArN0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: REVALIDATED
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e853b619e264ed-GIG
+{"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https:\/\/reqres.in\/img\/faces\/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https:\/\/reqres.in\/img\/faces\/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https:\/\/reqres.in\/img\/faces\/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https:\/\/reqres.in\/img\/faces\/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https:\/\/reqres.in\/img\/faces\/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https:\/\/reqres.in\/img\/faces\/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+00:43:38.499 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:43:38.502 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/23
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:43:38.936 [main] DEBUG com.intuit.karate - response time in milliseconds: 434
+1 < 404
+1 < Date: Fri, 01 Dec 2023 03:43:38 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402218&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=vb7VQ85YtQ2jtKGf1uBSeqwkWg24URSxQsJvbDXretQ%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402218&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=vb7VQ85YtQ2jtKGf1uBSeqwkWg24URSxQsJvbDXretQ%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: EXPIRED
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e853b948aa0191-GRU
+{}
+00:43:38.944 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:43:38.974 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe","job":"Developer"}
+
+00:43:39.427 [main] DEBUG com.intuit.karate - response time in milliseconds: 451
+1 < 201
+1 < Date: Fri, 01 Dec 2023 03:43:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402219&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=fPkEWl5aHS1i8sSTCb4VSyPzr7yTmWLuMoKmTxaIlqA%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402219&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=fPkEWl5aHS1i8sSTCb4VSyPzr7yTmWLuMoKmTxaIlqA%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"57-o01UC8GWvG8m7yp5PDkrDsEfYKo"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e853bc2f8c1ab5-GRU
+{"createdAt":"2023-12-01T03:43:39.234Z","name":"John Doe","id":"331","job":"Developer"}
+00:43:39.436 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:43:39.438 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/nonexistent
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:43:39.898 [main] DEBUG com.intuit.karate - response time in milliseconds: 460
+1 < 404
+1 < Date: Fri, 01 Dec 2023 03:43:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402219&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=fPkEWl5aHS1i8sSTCb4VSyPzr7yTmWLuMoKmTxaIlqA%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402219&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=fPkEWl5aHS1i8sSTCb4VSyPzr7yTmWLuMoKmTxaIlqA%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: MISS
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e853bf0b6b0319-GRU
+{}
+00:43:39.905 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:43:39.908 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jane Doe","job":"Leader"}
+
+00:43:40.358 [main] DEBUG com.intuit.karate - response time in milliseconds: 450
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:43:40 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402220&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=VTy48xGXVuuRk%2B32FW0s%2F8tvCpzuIrGhspMrVKE0ETI%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402220&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=VTy48xGXVuuRk%2B32FW0s%2F8tvCpzuIrGhspMrVKE0ETI%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"49-jt2xP56v/ep+Hs4LrupvqzPYtvY"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e853c1fb3401d6-GRU
+{"name":"Jane Doe","job":"Leader","updatedAt":"2023-12-01T03:43:40.165Z"}
+00:43:40.366 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:43:40.368 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:43:40.823 [main] DEBUG com.intuit.karate - response time in milliseconds: 455
+1 < 204
+1 < Date: Fri, 01 Dec 2023 03:43:40 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402220&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=VTy48xGXVuuRk%2B32FW0s%2F8tvCpzuIrGhspMrVKE0ETI%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402220&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=VTy48xGXVuuRk%2B32FW0s%2F8tvCpzuIrGhspMrVKE0ETI%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e853c4ec2fa519-GRU
+
+00:44:58.113 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:44:58.840 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:44:59.100 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:44:59.297 [main] DEBUG com.intuit.karate - response time in milliseconds: 174
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:44:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701245313&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=2BhHe7EfRezpqLxzYwGnTfR5chASH8lai2DUt7VKqTw%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701245313&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=2BhHe7EfRezpqLxzYwGnTfR5chASH8lai2DUt7VKqTw%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 3626
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e855b1bb2e0303-GRU
+{"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https:\/\/reqres.in\/img\/faces\/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https:\/\/reqres.in\/img\/faces\/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https:\/\/reqres.in\/img\/faces\/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https:\/\/reqres.in\/img\/faces\/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https:\/\/reqres.in\/img\/faces\/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https:\/\/reqres.in\/img\/faces\/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+00:44:59.333 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:44:59.336 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/23
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:44:59.403 [main] DEBUG com.intuit.karate - response time in milliseconds: 67
+1 < 404
+1 < Date: Fri, 01 Dec 2023 03:44:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402155&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=RYDWipDLvY5vPTNBHrCOTaa2KVQ35WNaZGfZIrwc71g%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402155&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=RYDWipDLvY5vPTNBHrCOTaa2KVQ35WNaZGfZIrwc71g%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 144
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e855b29bdf6d4e-GIG
+{}
+00:44:59.412 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:44:59.446 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe","job":"Developer"}
+
+00:44:59.922 [main] DEBUG com.intuit.karate - response time in milliseconds: 476
+1 < 201
+1 < Date: Fri, 01 Dec 2023 03:44:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402299&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=DFNeZT9X4qCHPQlaqz%2Bo1d2TkmM1F5QJDRFkP9I%2F7Y8%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402299&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=DFNeZT9X4qCHPQlaqz%2Bo1d2TkmM1F5QJDRFkP9I%2F7Y8%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"57-iG9pgTUJidj56SanvyQJKuENQeM"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e855b34a0f64f1-GIG
+{"createdAt":"2023-12-01T03:44:59.725Z","name":"John Doe","id":"215","job":"Developer"}
+00:44:59.929 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:44:59.932 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 11
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":""}
+
+00:45:00.389 [main] DEBUG com.intuit.karate - response time in milliseconds: 457
+1 < 201
+1 < Date: Fri, 01 Dec 2023 03:45:00 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 61
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402300&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=6enj6oGDktDRg6DPCSHt7%2BfaZEdMojOFYVGc%2B%2BeGDgw%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402300&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=6enj6oGDktDRg6DPCSHt7%2BfaZEdMojOFYVGc%2B%2BeGDgw%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"3d-b50ONQY2FCSV7UKihUBGGlB1vb8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e855b62c8f1b17-GRU
+{"createdAt":"2023-12-01T03:45:00.191Z","name":"","id":"203"}
+00:45:00.390 [main] ERROR com.intuit.karate - classpath:Reqres/Reqres.feature:28
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 457, url: https://reqres.in/api/users, response: 
+{"name":"","id":"203","createdAt":"2023-12-01T03:45:00.191Z"}
+classpath:Reqres/Reqres.feature:28
+00:45:00.401 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:45:00.406 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jane Doe","job":"Leader"}
+
+00:45:00.834 [main] DEBUG com.intuit.karate - response time in milliseconds: 428
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:45:00 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402300&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=6enj6oGDktDRg6DPCSHt7%2BfaZEdMojOFYVGc%2B%2BeGDgw%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402300&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=6enj6oGDktDRg6DPCSHt7%2BfaZEdMojOFYVGc%2B%2BeGDgw%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"49-A3rkhnd79HFmSA9dM7UK/L+vKPk"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e855b91d821b22-GRU
+{"name":"Jane Doe","job":"Leader","updatedAt":"2023-12-01T03:45:00.641Z"}
+00:45:00.851 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:45:00.853 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:45:01.281 [main] DEBUG com.intuit.karate - response time in milliseconds: 428
+1 < 204
+1 < Date: Fri, 01 Dec 2023 03:45:01 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402301&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=IzmKKHxUccErN%2BTP5CN%2Bl0jqo2PyegruG%2FbBNw13vrs%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402301&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=IzmKKHxUccErN%2BTP5CN%2Bl0jqo2PyegruG%2FbBNw13vrs%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e855bbe9fe0152-GRU
+
+00:46:31.825 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:46:32.566 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:46:32.840 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:46:33.061 [main] DEBUG com.intuit.karate - response time in milliseconds: 198
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:46:32 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701203119&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=cqTgZEZ1NuceohmBJpl9fnwv6BTWjJKLAIWTi4yArN0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701203119&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=cqTgZEZ1NuceohmBJpl9fnwv6BTWjJKLAIWTi4yArN0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 174
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e857fbccba1d4b-GIG
+{"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https:\/\/reqres.in\/img\/faces\/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https:\/\/reqres.in\/img\/faces\/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https:\/\/reqres.in\/img\/faces\/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https:\/\/reqres.in\/img\/faces\/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https:\/\/reqres.in\/img\/faces\/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https:\/\/reqres.in\/img\/faces\/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
+00:46:33.097 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:46:33.099 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/23
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:46:33.145 [main] DEBUG com.intuit.karate - response time in milliseconds: 46
+1 < 404
+1 < Date: Fri, 01 Dec 2023 03:46:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402218&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=vb7VQ85YtQ2jtKGf1uBSeqwkWg24URSxQsJvbDXretQ%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402218&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=vb7VQ85YtQ2jtKGf1uBSeqwkWg24URSxQsJvbDXretQ%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 175
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e857fc7eefa4ab-GRU
+{}
+00:46:33.155 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:46:33.188 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"John Doe","job":"Developer"}
+
+00:46:33.630 [main] DEBUG com.intuit.karate - response time in milliseconds: 441
+1 < 201
+1 < Date: Fri, 01 Dec 2023 03:46:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402393&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=f%2Bbapq1eAor5UZPOnT%2FIKBEVrj7VauJbbwoZOquAnag%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402393&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=f%2Bbapq1eAor5UZPOnT%2FIKBEVrj7VauJbbwoZOquAnag%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"57-gH6bFZZrLXDiJmNPB3YT8N97l/s"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e857fcfe8fa4f5-GRU
+{"createdAt":"2023-12-01T03:46:33.432Z","name":"John Doe","id":"266","job":"Developer"}
+00:46:33.640 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:46:33.644 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 12
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"email":""}
+
+00:46:34.078 [main] DEBUG com.intuit.karate - response time in milliseconds: 434
+1 < 400
+1 < Date: Fri, 01 Dec 2023 03:46:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 37
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402393&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=f%2Bbapq1eAor5UZPOnT%2FIKBEVrj7VauJbbwoZOquAnag%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402393&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=f%2Bbapq1eAor5UZPOnT%2FIKBEVrj7VauJbbwoZOquAnag%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"25-Ik70kof1lbc973ShN5FoVPxYn7A"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e857ffdb811af0-GRU
+{"error":"Missing email or username"}
+00:46:34.085 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:46:34.099 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jane Doe","job":"Leader"}
+
+00:46:34.558 [main] DEBUG com.intuit.karate - response time in milliseconds: 458
+1 < 200
+1 < Date: Fri, 01 Dec 2023 03:46:34 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402394&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=d28hGAR25QR1zC90C6lWxxp8DU8Urk8ma02%2BeuD2dq4%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402394&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=d28hGAR25QR1zC90C6lWxxp8DU8Urk8ma02%2BeuD2dq4%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"49-80Y37oqp28XjsTMGcbGjszt8eqs"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 82e85802de9c6472-GIG
+{"name":"Jane Doe","job":"Leader","updatedAt":"2023-12-01T03:46:34.359Z"}
+00:46:34.564 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:46:34.567 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:46:35.004 [main] DEBUG com.intuit.karate - response time in milliseconds: 437
+1 < 204
+1 < Date: Fri, 01 Dec 2023 03:46:34 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1701402394&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=d28hGAR25QR1zC90C6lWxxp8DU8Urk8ma02%2BeuD2dq4%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701402394&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=d28hGAR25QR1zC90C6lWxxp8DU8Urk8ma02%2BeuD2dq4%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 82e858059a0003e5-GRU
+
