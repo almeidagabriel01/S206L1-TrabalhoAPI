@@ -1,6 +1,6 @@
 # Projeto de Teste de API com Karate DSL
 
-Este projeto contém testes de API escritos com a Karate DSL para a API Reqres. Foi feito por Gabriel Almeida Dias e Vitor Oliveira Juliano De Almeida.
+Este projeto contém testes de API escritos com a Karate DSL para a API Reqres.
 
 ## Requisitos
 
@@ -33,3 +33,6 @@ Este comando irá iniciar a execução dos testes definidos na classe `ReqresRun
 ## Relatórios de Teste
 
 Após a execução dos testes, você pode encontrar os relatórios de teste no diretório `target/Reqres.Reqres.html`. Basta abrir este arquivo no navegador para visualizar o resultado dos testes.
+
+## Autores
+Este projeto foi criado por Gabriel Almeida Dias e Vitor Oliveira Juliano de Almeida.
