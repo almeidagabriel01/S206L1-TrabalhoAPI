@@ -33,3 +33,8 @@ Scenario: PUT update a user
   When method put
   Then status 200
   And match $.name == 'Jane Doe'
+
+Scenario: DELETE a user
+  Given path 'users/2'
+  When method delete
+  Then status 204
